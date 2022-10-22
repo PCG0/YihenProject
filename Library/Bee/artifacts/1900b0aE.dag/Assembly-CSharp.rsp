@@ -379,6 +379,7 @@
 "Assets/Scripts/bullet/bullet.cs"
 "Assets/Scripts/Cmera/CmeraFollow.cs"
 "Assets/Scripts/Player/Attack.cs"
+"Assets/Scripts/Player/AutoTurn.cs"
 "Assets/Scripts/Player/Movement.cs"
 -langversion:9.0
 
