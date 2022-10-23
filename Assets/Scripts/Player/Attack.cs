@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
+// 玩家攻击脚本
 public class Attack : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float fireInterval;
-    private float nextFire;
+    private float nextFire; // 开火间隔
     public Transform muzzleTransform;
 
     // Update is called once per frame
