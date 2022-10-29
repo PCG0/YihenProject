@@ -5,12 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-
-    #region 参数
-        [Header("移动")]
-            public float moveSpeed = 3.5f;//人物移动速度
-            public float targetSpeed=3.5f;// 最大速度
-    #endregion
+    public float moveSpeed = 3.5f;//人物移动速度
 
     void Start()
     {

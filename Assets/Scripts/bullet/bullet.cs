@@ -15,7 +15,7 @@ public class bullet : MonoBehaviour
         // Instantiate(prefab);
         rig = GetComponent<Rigidbody2D>();//获取子弹刚体组件
         rig.velocity = transform.right * speed;//移动
-        Destroy(gameObject, 2);//2秒后销毁子弹，不然子弹会无限多
+        Destroy(gameObject, 10);//x秒后销毁子弹，不然子弹会无限多
     }	
  
     private void OnTriggerEnter2D(Collider2D collision)//触碰到别的碰撞器的时候

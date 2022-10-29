@@ -25,9 +25,7 @@ public class CmeraFollow : MonoBehaviour
         if (m_playerTransform.position.x > 0f)
         {
             targetPosX = new Vector3(m_playerTransform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
-        }
-        else
-        {
+        } else {
             targetPosX = new Vector3(m_playerTransform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         }
 
@@ -35,9 +33,7 @@ public class CmeraFollow : MonoBehaviour
         if (m_playerTransform.position.y > 0f)
         {
             targetPosY = new Vector3(gameObject.transform.position.x, m_playerTransform.position.y, gameObject.transform.position.z);
-        }
-        else
-        {
+        } else {
             targetPosY = new Vector3(gameObject.transform.position.x, m_playerTransform.position.y, gameObject.transform.position.z);
         }
 
