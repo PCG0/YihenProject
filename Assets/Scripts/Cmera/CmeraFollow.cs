@@ -12,11 +12,12 @@ public class CmeraFollow : MonoBehaviour
 
     void Update()
     {
+        // 设定追踪带有 “player” tag 的 Object
         m_playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        CMF();
+        Follow();
     }
-
-    public void CMF()
+    // 追踪
+    public void Follow() 
     {
         targetPosX = new Vector3(m_playerTransform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         targetPosY = new Vector3(gameObject.transform.position.x, m_playerTransform.position.y, gameObject.transform.position.z);
@@ -36,8 +37,9 @@ public class CmeraFollow : MonoBehaviour
         } else {
             targetPosY = new Vector3(gameObject.transform.position.x, m_playerTransform.position.y, gameObject.transform.position.z);
         }
-
+        // 数据合并，实现追踪效果
         transform.position = Vector3.Lerp(transform.position, targetPosX, smooth * Time.deltaTime);
         transform.position = Vector3.Lerp(transform.position, targetPosY, smooth * Time.deltaTime);
     }
+
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float moveSpeed = 3.5f;//人物移动速度
+    // 人物移动速度
+    public float moveSpeed = 3.5f;
 
     void Start()
     {
